@@ -1,0 +1,8 @@
+en:
+  vagrant:
+    provisioners:
+      sprinkle:
+        no_script: |-
+          You must set the path to the Sprinkle install script.
+        script_path_invalid: |-
+          No Sprinkle script was found at the provided path.

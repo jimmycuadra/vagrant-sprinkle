@@ -17,6 +17,12 @@ module VagrantPlugins
       end
 
       provisioner(:sprinkle) do
+        I18n.load_path << File.expand_path(
+          'locales/en.yml',
+          Sprinkle.source_root
+        )
+        I18n.reload!
+
         require_relative 'provisioner'
         Provisioner
       end
