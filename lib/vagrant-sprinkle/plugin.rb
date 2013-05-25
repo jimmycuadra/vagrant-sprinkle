@@ -11,7 +11,7 @@ module VagrantPlugins
       name 'sprinkle'
       description 'Adds a Sprinkle provisioner to Vagrant.'
 
-      config(:sprinkle) do
+      config(:sprinkle, :provisioner) do
         require_relative 'config'
         Config
       end

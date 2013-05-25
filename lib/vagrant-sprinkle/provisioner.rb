@@ -21,6 +21,7 @@ module VagrantPlugins
         options << '--verbose' if config.verbose
         options << '--cloud' if config.cloud
         options << '--force' if config.force
+        options << { :notify => [:stdout, :stderr] }
         options
       end
     end
