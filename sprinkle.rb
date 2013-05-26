@@ -6,7 +6,7 @@ package :vim do
   apt 'vim'
 end
 
-policy :development, roles: :main do
+policy :development, roles: :vagrant do
   requires :git
   requires :vim
 end
