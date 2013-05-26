@@ -22,6 +22,8 @@ SUMMARY
   spec.require_paths = ['lib']
 
   spec.add_runtime_dependency 'sprinkle', '>= 0.5'
+  # activesupport 3.2.13 hardcodes i18n 0.6.1 :(
+  spec.add_runtime_dependency 'activesupport', '!= 3.2.13'
 
   spec.add_development_dependency 'bundler', '~> 1.3'
   spec.add_development_dependency 'rake'
