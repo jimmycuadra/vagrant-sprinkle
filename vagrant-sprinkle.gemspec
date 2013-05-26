@@ -21,6 +21,8 @@ SUMMARY
   spec.test_files    = spec.files.grep(%r{^spec/})
   spec.require_paths = ['lib']
 
+  spec.add_runtime_dependency 'sprinkle', '>= 0.5'
+
   spec.add_development_dependency 'bundler', '~> 1.3'
   spec.add_development_dependency 'rake'
 end
