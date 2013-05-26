@@ -32,7 +32,7 @@ Set the SSH options for deploy in accordance with the details provided by `vagra
 ``` ruby
 deployment do
   delivery :capistrano do
-    role :main, "127.0.0.1"
+    role :vagrant, "127.0.0.1"
     set :user, "vagrant"
     ssh_options[:keys] = ["#{ENV['HOME']}/.vagrant.d/insecure_private_key"]
     ssh_options[:port] = 2222
