@@ -16,7 +16,7 @@ module VagrantPlugins
       def compile_options
         options = []
         options << "--script=#{config.script}"
-        options << "--only #{config.only}" if config.only
+        options << "--only=#{config.only}" if config.only
         options << '--test' if config.test
         options << '--verbose' if config.verbose
         options << '--cloud' if config.cloud
